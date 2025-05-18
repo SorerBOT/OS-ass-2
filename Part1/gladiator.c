@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 #include <string.h>
 #include <stdlib.h>
 #include <stdarg.h>
@@ -36,15 +37,16 @@ void log_to_file(const char* gladId, const char *__restrict __format, ...);
 
 int main(int argc, char** argv)
 {
-    char* gladId = "G1";
+    char* gladId = NULL;
     Gladiator* glad = NULL;
 
-/*     if (argc < 2)
-        exit(1) */;
+     if (argc < 2)
+        exit(1);
 
-    // gladId = argv[1];
+    gladId = argv[1];
     glad = init_glad(gladId);
 
+    log_to_file(glad->id, "Gladiator process started. PID: %d\n", getpid());
     while (glad->stats.health > 0)
     {
         play_round(glad);

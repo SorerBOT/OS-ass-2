@@ -1,0 +1,19 @@
+Gladiator process started. PID: 104731
+Facing opponent 3... Taking 190 damage
+Are you not entertained? Remaining health: 1810
+Facing opponent 1... Taking 100 damage
+Are you not entertained? Remaining health: 1710
+Facing opponent 4... Taking 400 damage
+Are you not entertained? Remaining health: 1310
+Facing opponent 3... Taking 190 damage
+Are you not entertained? Remaining health: 1120
+Facing opponent 1... Taking 100 damage
+Are you not entertained? Remaining health: 1020
+Facing opponent 4... Taking 400 damage
+Are you not entertained? Remaining health: 620
+Facing opponent 3... Taking 190 damage
+Are you not entertained? Remaining health: 430
+Facing opponent 1... Taking 100 damage
+Are you not entertained? Remaining health: 330
+Facing opponent 4... Taking 400 damage
+The gladiator has fallen... Final health: -70
