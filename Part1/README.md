@@ -1,35 +1,85 @@
-## Tester for Part 1
+# This is the input and output files of the tester- you can also see it in the json
+## I highly recommend u to add a lot more cases to the json and to share it with everyone
+### 1.
+### **`data.txt`** - BEFORE 
+```
+1234567890abcdefghij
 
-⚠️ **Important Notes:**
-- This tester is **for your own use** and is **not guaranteed** to be the one used by the grader.
-- The provided tester **only covers Part 1** of the assignment.
-- I could have just given u the executable but I decided not to so u could change the tester and maybe add more tests (and if u do so please share it with your classmates).
+```
 
-### How to Use the Tester
+### **`requests.txt`**
+```
+R 2 15
+R 0 2
+W 100 OMERTHEKING
+W 10 HEMI
+Q
+```
+### **`data.txt`** - AFTER
+```
+1234567890HEMIabcdefghij
 
-0. **Setup:**  
-   Clone the git repo, make sure that the tester (and the executables I gave) are in the same directory with your files.  
-1. **Compile Your Program:**
-   ```bash
-   gcc -o tournament tournament.c
-   gcc -o gladiator gladiator.c
-   ```
-2. **Compile the Tester:**
-   ```bash
-   gcc -o tester tester.c
-   ```
-3. **Run the Tester:**
-   ```bash
-   ./tester
-   ```
+```
+### **`read_results.txt`** - AFTER
+```
+34567890abcdef
+123
 
-### Customizing the Tester
-- If you want to **add more test cases**, modify `tester.c` and include additional scenarios.
-- Feel free to **change file contents** and **experiment** with different cases.
+```
+### 2.
+### **`data.txt`** - BEFORE
+```
+1234567890abcdefghij
 
-💡 **This tester is meant to assist you, but ultimately, it's your responsibility to ensure your implementation meets all requirements.**
+```
 
-If you need **ANYTHING**, feel free to reach out to me :)  
-  
-# Happy Coding 👨‍💻👩‍💻
+### **`requests.txt`**
+```
+W 10 HelloWorld
+R 5 29
+W 100 InsertHere
+R 90 150
+W 110 XYZABC
+R 195 220
+W 20 LongTextHere
+Q
+```
+### **`data.txt`** - AFTER
+```
+1234567890HelloWorldLongTextHereabcdefghij
 
+```
+### **`read_results.txt`** - AFTER
+```
+67890HelloWorldabcdefghij
+
+```
+### 3.
+### **`data.txt`**  - BEFORE
+```
+1234567890abcdefghij
+
+```
+
+### **`requests.txt`**
+```
+R 2 2
+W 9 NEVERGONNAGIVEYOUUP
+R 0 25
+W 0 98
+W 10 WINDOWSISTRASH
+R 2 30
+Q
+```
+### **`data.txt`** - AFTER
+```
+9812345678WINDOWSISTRASH9NEVERGONNAGIVEYOUUP0abcdefghij
+
+```
+### **`read_results.txt`** - AFTER
+```
+3
+123456789NEVERGONNAGIVEYOU
+12345678WINDOWSISTRASH9NEVERG
+
+```
