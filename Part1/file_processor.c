@@ -59,7 +59,6 @@ void handle_write(int data_fd, int offset, char *text, off_t file_size)
         read(data_fd, tail, tail_len);
     }
 
-    // Move to offset
     lseek(data_fd, offset, SEEK_SET);
     write(data_fd, text, text_len);
 
